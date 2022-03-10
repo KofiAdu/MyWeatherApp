@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Helvetica Neue", sans-serif;
+    background-size: cover;
+    background-position: top center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-image: linear-gradient(180deg, #a9c9ff 0%, #ffbbec 100%); */
+    background-color: #F3F3F3;
+  }
+  
+  #weather-form {
+    position: relative;
+    margin-top: 10px;
+    width: 100%;
+    padding: 2.5vw 12vw;
+    border-radius: 10px;
+    background-color: #ffffff;
+  }
+  
+  #city-input {
+    padding: 1vw 5vw;
+    font-family: Inter;
+    font-weight: 500;
+    color:rgb(99, 99, 99);
+    border: solid rgb(164, 164, 164) 2px;
+    border-radius: 50px 0 0 50px;
+  }
+  
+  #city-input:focus {
+    border: 0;
+  }
+  
+  button {
+    padding: 1.15vw 2vw;
+    background-color: #43495E;
+    border: 0;
+    border-radius: 0 50px 50px 0px;
+    color: #fff;
+    cursor: pointer;
+    font-family: Inter;
+    font-weight: 500;
+  }
+  
+  .info-area{
+    position: relative;
+    margin-top: 30px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    /* padding: 2.5vw 20vw 20vw 30vw; */
+    /* display: inline-block; */
+    height: auto;
+    width: 60vw;
+  }
+
+  #icon{
+    position: relative;
+    bottom: 65px;
+    left: 520px;
+    color:#43495E;
+    display: inline-block;
+  }
+
+  #icon img{
+    height: 100px;
+    width: auto;
+  }
+
+  #tempF{
+    position: relative;
+    left: 160px;
+    bottom: -40px;
+    font-family: Inter;
+    font-size: 55px;
+    font-weight: 700;
+    color:#43495E;
+    display: inline-block;
+  }
+
+  #tempC{
+    position: relative;
+    left: 160px;
+    bottom: -40px;
+    font-family: Inter;
+    font-size: 55px;
+    font-weight: 700;
+    color:#43495E;
+    display: inline-block;
+  }
+
+  .orspan{
+    position: relative;
+    left: 160px;
+    bottom: -40px;
+    font-family: Inter;
+    font-size: 60px;
+    font-weight: 700;
+    color:#43495E;
+    display: inline-block;
+  }
+
+  #location{
+    position: relative;
+    left: 160px;
+    bottom: -40px;
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: 400;
+    color:#43495E;
+  }
+
+  #description{
+    position: relative;
+    left: 160px;
+    top: -60px;
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: 400;
+    color:#43495E;
+  }
+
+  #date{
+    position: relative;
+    left: 160px;
+    top: -55px;
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: 400;
+    color:#43495E;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    *{
+      overflow: hidden;
+    }
+    .info-area{
+      width: 90vw;
+      height: 35vh;
+      left: 0;
+    }
+
+    #icon{
+      bottom: 65px;
+      left: 140px;
+    }
+  
+    #icon img{
+      height: 70px;
+      width: auto;
+    }
+
+    #tempF{
+      left: 55px;
+      bottom: -80px;
+      font-size: 45px;
+   
+    }
+  
+    #tempC{
+      position: relative;
+      left: 55px;
+      bottom: -80px;
+      font-size: 45px;
+    }
+
+    .orspan{
+      position: relative;
+      left: 55px;
+      bottom: -80px;
+      font-size: 45px;
+    }
+
+    #location{
+      position: relative;
+      left: 60px;
+      bottom: -80px;
+    }
+
+    #description{
+      position: relative;
+      left: 60px;
+      top: 20px;
+    }
+    #date{
+      position: relative;
+      left: 60px;
+      top: 40px;
+    }
+    #weather-form {
+      display: inline-flex;
+      padding: 4vw;
+      }
+  }
+  /* .tempDiv{
+    display: inline-block;
+  } */
+
+  /* #icon{
+    position: relative;
+    bottom: 240px;
+    left: 200px;
+    color:#43495E;
+    font-size: 90px;
+  }
+
+  #icon img{
+    height: 200px;
+    width: auto;
+  }
+
+  #tempF{
+    position: relative;
+    right: 100px;
+    font-family: Inter;
+    font-size: 70px;
+    font-weight: 700;
+    color:#43495E;
+  }
+
+  #tempC{
+    position: relative;
+    right: 100px;
+    font-family: Inter;
+    font-size: 70px;
+    font-weight: 700;
+    color:#43495E;
+  }
+
+  .orspan{
+    position: relative;
+    right: 20px;
+    font-family: Inter;
+    font-size: 35px;
+    font-weight: 700;
+    color:#43495E;
+  }
+
+  #location{
+    position: relative;
+    right: 100px;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 500;
+    color:#D9DADC;
+    letter-spacing: 2px;
+    top: 10px;
+  }
+
+  #description{
+    position: relative;
+    right: -220px;
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: 400;
+    color:#D9DADC;
+    bottom: 280px;
+  }
+
+  #date{
+    position: relative;
+    right: -220px;
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: 400;
+    color:#D9DADC;
+    bottom: 280px;
+  } */
